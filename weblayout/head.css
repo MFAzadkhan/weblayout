@@ -1,0 +1,81 @@
+*{
+    margin: 3px;
+    padding:3px;
+    background-color: transparent;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.layout {
+    display: grid;
+    grid-template-areas:
+    'home home home home home home'
+    'logo logo logo logo logo logo '
+    'end end end end end end';
+    gap: 3px;
+    background-color:transparent;
+    padding: 3px;
+    color: black;
+    text-decoration: none
+}
+
+.layout > div {
+    background-color: #aba092;
+    text-align: center;
+    padding: 2px 0;
+    font-size: 30px;
+    color: black;
+    text-decoration: none
+}
+
+.home {
+    grid-area: home;
+    border: 2px transparent;
+    padding: 25px;
+    color: black;
+    text-decoration: none
+}
+
+
+.logo{
+    grid-area:logo;
+    border: 2px transparent;
+    padding: 25px;
+    background-color: transparent;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: black;
+    text-decoration: none
+}
+
+
+
+
+body {
+    background-image: url(concep1.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    text-decoration: none
+}
+
+
+.end{
+    grid-area:end;
+    border-color: transparent;
+}
+
+.layout div:nth-child(even){
+    background-color:transparent;
+}
+
+.layout div:nth-child(odd){
+    background-color: transparent;}
+
